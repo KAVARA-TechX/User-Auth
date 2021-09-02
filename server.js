@@ -4,7 +4,8 @@ const cors = require("cors");
 const db = require("./models");
 
 const app = express();
-
+var util= require('util');
+var encoder = new util.TextEncoder('utf-8');
 var corsOptions = {
   origin: "http://localhost:8081"
 };
